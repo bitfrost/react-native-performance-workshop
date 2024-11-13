@@ -11,6 +11,7 @@ const REACT_NATIVE_BIRTHDAY = "2025-03-26T08:00:00.000Z";
 export const DiscoverTab = () => {
   const { photos, isLoading } = useDiscoverPhotos();
   const [days, hours, minutes, seconds] = useCountdown(REACT_NATIVE_BIRTHDAY);
+  // requestAnimationFrame for metrics
   useSendPageView("discover", null);
 
   return (

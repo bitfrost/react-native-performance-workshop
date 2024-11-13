@@ -6,6 +6,9 @@ import { enableFreeze } from "react-native-screens";
 
 const queryClient = new QueryClient();
 
+// ha, import was already there :) 
+enableFreeze(true);
+
 export default function App() {
   return (
     <SafeAreaProvider>

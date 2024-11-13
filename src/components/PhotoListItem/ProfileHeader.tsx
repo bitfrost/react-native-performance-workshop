@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 
 export const ProfileHeader = ({ user }: { user: User }) => {
   const { navigate } = useNavigation();
-
+  // useCallback onPress or hoist (hoist)
   return (
     <Pressable style={styles.container} onPress={() => navigate("Profile")}>
       <Image style={styles.avatar} source={{ uri: user.profileImage.medium }} />

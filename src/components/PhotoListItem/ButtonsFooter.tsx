@@ -4,6 +4,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 import { Photo } from "../../data/model/photo.quicktype";
 import { Button } from "../atoms/Button";
 
+// check out Icon implementation here, often not code split well
 export const ButtonsFooter = ({ photo }: { photo: Photo }) => {
   return (
     <View style={styles.container}>

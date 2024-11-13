@@ -2,6 +2,8 @@ import React from 'react';
 import {Dimensions, StyleSheet, View} from 'react-native';
 import SkeletonContent from 'react-native-skeleton-placeholder';
 
+// ha, remove the silly Array(3) every render.... egads
+// don't call Dimensions.get multiple times for the same value 
 export const ListContainer = ({children}: {children: React.ReactNode}) => {
   return (
     <View style={{flex: 1}}>

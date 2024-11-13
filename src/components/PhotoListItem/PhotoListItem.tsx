@@ -5,6 +5,9 @@ import { ProfileHeader } from "./ProfileHeader";
 import { ButtonsFooter } from "./ButtonsFooter";
 import { useSafeAreaFrame } from "react-native-safe-area-context";
 
+// use expo image + next.js image optimization backend + google 'next.j react native image component'
+// add blur hash as part of load + end point for that.
+
 export const PhotoListItem = ({ photo }: { photo: Photo }) => {
   const aspectRatio = photo.width / photo.height;
 

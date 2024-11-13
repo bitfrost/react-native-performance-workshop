@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+
+// all suspect here, look int moore
+
 export const useCountdown = (targetDate: string) => {
   const countDownDate = new Date(targetDate).getTime();
 
@@ -18,6 +21,7 @@ export const useCountdown = (targetDate: string) => {
   return getReturnValues(countDown);
 };
 
+// ha , use Memo! wow.... 
 const getReturnValues = (countDown: number) => {
   const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
   const hours = Math.floor(

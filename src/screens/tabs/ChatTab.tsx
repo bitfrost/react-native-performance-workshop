@@ -28,7 +28,7 @@ const Button = ({
     <Text style={{ fontSize: 40, color: "white" }}>{title}</Text>
   </TouchableOpacity>
 );
-
+//  MORE bad fibo
 const fibo = (n: number): number => {
   if (n <= 1) {
     return n;

@@ -1,9 +1,9 @@
 import { Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const expensiveCalculation = (timems: number) => {
+const expensiveCalculation = (times: number) => {
   const initialTime = new Date().getTime();
-  while (new Date().getTime() - initialTime < timems) {}
+  while (new Date().getTime() - initialTime < times) {}
 };
 
 const functionA = () => {
@@ -26,6 +26,8 @@ const rootFunction = () => {
   expensiveCalculation(2000);
   functionC();
 };
+
+// look into this silly ness,  they can be done in parrallel, don't know what the author rants here since all no-ops
 
 export const FlameChartScreen = () => {
   return (

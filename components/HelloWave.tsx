@@ -20,6 +20,8 @@ export function HelloWave() {
     4 // Run the animation 4 times
   );
 
+  // missing dependencies array
+  // https://docs.swmansion.com/react-native-reanimated/docs/guides/web-support/#web-without-the-babel-plugin
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ rotate: `${rotationAnimation.value}deg` }],
   }));

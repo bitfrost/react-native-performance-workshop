@@ -6,6 +6,7 @@ const Item = ({ index }: { index: number }) => (
   </View>
 );
 
+// what?
 export const ListExperiment = () => {
   return (
     <FlatList

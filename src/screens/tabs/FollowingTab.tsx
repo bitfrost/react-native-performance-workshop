@@ -2,7 +2,7 @@ import React from "react";
 import { PhotoList } from "../../components/PhotoList";
 import { useFollowingPhotos } from "../../data/usePhotos";
 import { useSendPageView } from "@/src/services/analytics/useSendPageView";
-
+// requestAnimationFrame for metrics
 export const FollowingTab = () => {
   const { photos, isLoading } = useFollowingPhotos();
   useSendPageView("discover", null);

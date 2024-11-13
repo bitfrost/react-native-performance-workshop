@@ -4,7 +4,7 @@ import { Photo } from "../data/model/photo.quicktype";
 import { PhotoListItem } from "./PhotoListItem/PhotoListItem";
 
 const Separator = () => <View style={{ height: 16 }} />;
-
+// TODO flash list here
 export const PhotoList = ({ photos }: { photos: Photo[] }) => {
   return (
     <FlatList

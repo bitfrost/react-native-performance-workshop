@@ -25,6 +25,8 @@ export default function ParallaxScrollView({
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
   const scrollOffset = useScrollViewOffset(scrollRef);
 
+  // missing dependencies array
+  // https://docs.swmansion.com/react-native-reanimated/docs/guides/web-support/#web-without-the-babel-plugin
   const headerAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
